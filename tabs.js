@@ -3,12 +3,13 @@ const contentArray = Array.from(document.querySelectorAll('#select-content'));
 
 tabsArray.forEach(tab=>{
     tab.addEventListener('click',()=>{
+        
         let target = tab
         tabsArray.forEach(t=>{
             t.classList.remove('bg-blue-200');
         });
         const currentTab = tabsArray.indexOf(target)
-        contentArray.forEach(content,()=>{
+        contentArray.forEach(content=>{
             if(contentArray.indexOf(content)===currentTab){
                 content.classList.remove('hidden')
             }else if(contentArray.indexOf(content) !== currentTab){

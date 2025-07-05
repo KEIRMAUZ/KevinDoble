@@ -4,8 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kevin</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <ul class="flex ">
+                <li class="mr-4 cursor-pointer p-2 hover:bg-blue-100 bg-blue-200" id="select-tab">Tab 1</li>
+                <li class="mr-4 cursor-pointer p-2 hover:bg-blue-100" id="select-tab">Tab 2</li>
+                <li class="mr-4 cursor-pointer p-2 hover:bg-blue-100" id="select-tab">Tab 3</li>
+                <li class="mr-4 cursor-pointer p-2 hover:bg-blue-100" id="select-tab">Tab 4</li>
+                <li class="mr-4 cursor-pointer p-2 hover:bg-blue-100" id="select-tab">Tab 5</li>
+                <li><a href=""></a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <section id="select-content" class="h-40 bg-blue-200 text-4xl flex items-center justify-center" >
+        Tab 1 content
+    </section>
+    <section id="select-content" class="h-40 bg-blue-200 text-4xl flex items-center justify-center hidden" >
+        Tab 2 content
+    </section>
+    <section id="select-content" class="h-40 bg-blue-200 text-4xl flex items-center justify-center hidden" >
+        Tab 3 content
+    </section>
+    <section id="select-content" class="h-40 bg-blue-200 text-4xl flex items-center justify-center hidden" >
+        Tab 4 content
+    </section>
+    <section id="select-content" class="h-40 bg-blue-200 text-4xl flex items-center justify-center hidden" >
+        Tab 5 content
+    </section>
+    <script src="tabs.js"></script>
 </body>
 </html>
